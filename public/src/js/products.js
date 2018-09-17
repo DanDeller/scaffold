@@ -1,0 +1,2 @@
+// CATALOG PAGE JS
+$(function() {});
