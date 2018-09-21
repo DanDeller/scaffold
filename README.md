@@ -1,7 +1,7 @@
 # scaffold
 A quick dev environment built on node, using gulp and complete with babel included for es6.
 
-<h2>Download repo:</h2>
+<h2>Download Repo:</h2>
 <ul>
   <li>git clone https://github.com/DanDeller/scaffold.git</li>
 </ul>
@@ -12,7 +12,13 @@ A quick dev environment built on node, using gulp and complete with babel includ
   <li>Start up: npm start</li>
 </ul>
 
-> Running npm start will start both nodemon and gulp.
-> So running this will start with everything you need.
+> Running npm start will start both nodemon and gulp and is all you need to get started.
+> This also will watch for changes in server.js as well as all .less and .js files
 
-[I'm an inline-style link](https://www.google.com)
+<h2>Optimizing Images:</h2>
+> Scaffold also comes ready to optimize images. Images that are optimized will sent to the assets directory.
+<ul>
+  <li>gulp image</li>
+</ul>
+
+//[I'm an inline-style link](https://www.google.com)
