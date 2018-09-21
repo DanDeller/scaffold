@@ -16,6 +16,9 @@ A quick dev environment built on node, using gulp and complete with babel includ
 > This also will watch for changes in server.js as well as all .less and .js files
 
 <h2>Optimizing Images:</h2>
+
+> Running npm start will start both nodemon and gulp and is all you need to get started.
+> This also will watch for changes in server.js as well as all .less and .js files
 > Scaffold also comes ready to optimize images. Images that are optimized will sent to the assets directory.
 <ul>
   <li>-gulp image</li>
