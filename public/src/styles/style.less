@@ -23,6 +23,7 @@ DEFAULT VARIABLES & LIGHT CSS RESET
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -36,7 +37,7 @@ p, ul, h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-p, li {
+p, li, label {
   font-family: @text;
 }
 
@@ -342,10 +343,40 @@ PRODUCTS
 }
 
 /********************************
+LOGIN PAGE
+********************************/
+#login {
+  padding: 50px 0;
+  width: 100%;
+  .login-form {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .login-left,
+  .login-right {
+    margin: 15px;
+    padding: 15px;
+    label {
+      display: block;
+      margin: 0 0 5px 0;
+    }
+    input[type=text] {
+      border: 1px solid @textColor;
+      border-radius: 5px;
+      padding: 5px;
+      &:first-of-type {
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+}
+
+/********************************
 FOOTER
 ********************************/
 #footer {
-  // display: none;
   background: #ccc;
   border-bottom: 0.0625em solid #4c4c4c;
   border-top: 0.0625em solid #4c4c4c;

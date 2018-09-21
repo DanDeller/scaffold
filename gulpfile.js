@@ -1,15 +1,31 @@
-const gulp        = require('gulp'),
+/*=========================
+SCAFFOLD GULP FILE
+  Tasks:
+    - LESS
+    - JS
+    - Image optimization
+
+  Start:
+    - npm start
+
+  Optimize Images:
+    - gulp image
+
+  Output folder:
+    - './public/assets'
+=========================*/
+
+const sourcemaps  = require('gulp-sourcemaps'),
       minifycss   = require('gulp-minify-css'),
-      babel       = require('gulp-babel'),
-      less        = require('gulp-less'),
-      concat      = require('gulp-concat'),
-      watch       = require('gulp-watch'),
-      notify      = require('gulp-notify'),
+      nodemon     = require('gulp-nodemon'),
       changed     = require('gulp-changed'),
-      sourcemaps  = require('gulp-sourcemaps'),
-      livereload  = require('gulp-livereload'),
-      child       = require('child_process'),
-      nodemon     = require('gulp-nodemon');
+      concat      = require('gulp-concat'),
+      notify      = require('gulp-notify'),
+      watch       = require('gulp-watch'),
+      babel       = require('gulp-babel'),
+      image       = require('gulp-image');
+      gulp        = require('gulp'),
+      less        = require('gulp-less');
 
 const filePath = {
       less: {
@@ -19,6 +35,10 @@ const filePath = {
       js: {
         src: './public/src/js/**/*.js',
         dest: './public/assets/mainJS'
+      },
+      img: {
+        src: './public/src/images/*.+(jpg|jpeg|gif|png)',
+        dest: './public/assets/images'
       }
     };
 
@@ -33,8 +53,17 @@ const nodemonOptions = {
 
 gulp.task('start', () => {
   nodemon(nodemonOptions).on('restart', () => {
-    console.log('Restarted.');
+    console.log('Nodemon restarted.');
   });
+});
+
+gulp.task('image', () => {
+  return gulp.src([
+    filePath.img.src
+  ])
+  .pipe(image())
+  .pipe(gulp.dest(filePath.img.dest))
+  .pipe(notify({message: 'Image task complete.'}))
 });
 
 gulp.task('less', () => {
@@ -69,4 +98,4 @@ gulp.task('watch-parts', () => {
 
 gulp.task('build', ['less', 'js']);
 gulp.task('watch', ['watch-parts']);
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'image']);
