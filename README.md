@@ -10,7 +10,7 @@ A quick dev environment built on node, using gulp and complete with babel includ
 <ul>
   <li>Install packages: yarn/npm i</li>
   <li>Start up: npm start</li>
-  <li>Port: [I'm an inline-style link](http://www.google.com)</li>
+  <li>Port: [I'm an inline-style link](https://www.google.com)</li>
 </ul>
 
 > Running npm start will start both nodemon and gulp and is all you need to get started.
