@@ -22,5 +22,3 @@ A quick dev environment built on node, using gulp and complete with babel includ
 <ul>
   <li>-gulp image</li>
 </ul>
-
-[I'm an inline-style link](https://www.google.com)
