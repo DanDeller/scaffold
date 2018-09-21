@@ -18,7 +18,7 @@ A quick dev environment built on node, using gulp and complete with babel includ
 <h2>Optimizing Images:</h2>
 > Scaffold also comes ready to optimize images. Images that are optimized will sent to the assets directory.
 <ul>
-  <li>gulp image</li>
+  <li>-gulp image</li>
 </ul>
 
 //[I'm an inline-style link](https://www.google.com)
