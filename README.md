@@ -3,8 +3,8 @@ A quick dev environment built on node, using gulp.
 
 <h2>Why Scaffold?</h2>
 <ul>
-  <li>Utilizes flex layout</li>
-  <li>Uses babel for es6</li>
+  <li>Flex layout</li>
+  <li>Babel for es6</li>
   <li>LESS ready</li>
 </ul>
 
@@ -23,5 +23,5 @@ A quick dev environment built on node, using gulp.
 
 > Scaffold also comes ready to optimize images. Images that are optimized will be sent to the assets directory.
 <ul>
-  <li>-gulp image</li>
+  <li>gulp image</li>
 </ul>
