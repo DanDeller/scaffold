@@ -8,7 +8,7 @@ A quick dev environment built on node, using gulp and complete with babel includ
 
 <h2>Usage:</h2>
 <ul>
-  <li>Install packages: yarn/npm i</li>
+  <li>Install packages: yarn or npm i</li>
   <li>Start up: npm start</li>
   <li>Port: http://localhost:3000/</li>
 </ul>
