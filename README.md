@@ -1,8 +1,6 @@
 [![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
 [![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
-[![npm version](https://badge.fury.io/js/express.svg)](https://badge.fury.io/js/express)
-
-[![npm version](https://david-dm.org/dandeller/scaffold/dev-status.svg)
+[![devDependency Status](https://david-dm.org/dandeller/scaffold/dev-status.svg)
 
 # Scaffold
 A quick dev environment built on node, using gulp.
