@@ -1,5 +1,12 @@
-# scaffold
-A quick dev environment built on node, using gulp and complete with babel included for es6.
+# Scaffold
+A quick dev environment built on node, using gulp.
+
+<h2>Why Scaffold?</h2>
+<ul>
+  <li>Utilizes flex layout</li>
+  <li>Uses babel for es6</li>
+  <li>LESS ready</li>
+</ul>
 
 <h2>Usage:</h2>
 <ul>
