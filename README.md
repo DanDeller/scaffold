@@ -10,6 +10,7 @@ A quick dev environment built on node, using gulp.
   <li>Flex layout</li>
   <li>Babel for es6</li>
   <li>LESS ready</li>
+  <li>Optimize images</li>
 </ul>
 
 <h2>Usage:</h2>
