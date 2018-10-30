@@ -464,3 +464,81 @@ PRIVACY POLICY
     margin: 0 10px;
   }
 }
+
+/********************************
+ACCOUNT SELECTION
+********************************/
+#account-selection {
+  margin: 50px 0;
+  min-height: 200px;
+  .container {
+    justify-content: space-between;
+  }
+}
+
+.account-sidebar {
+  background: #f2f2f2;
+  padding: 10px;
+  width: 20%;
+  .sidebar-block {
+    border: 1px solid #ccc;
+    margin: 0 0 15px 0;
+    i {
+      cursor: pointer;
+      &.rotate {
+        transform: rotate(-90deg);
+      }
+    }
+    &:last-of-type {
+      margin: 0;
+    }
+    .sidebar-heading {
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px;
+    }
+    ul {
+      background: #fff;
+      &.hide-list {
+        height: 0;
+        overflow: hidden;
+      }
+      li {
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+        padding: 10px 5px 10px 10px;
+        &:last-of-type {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.all-info {
+  border: 1px solid #ccc;
+  width: 78%;
+  .info-heading {
+    background: #f2f2f2;
+    border-top: 2px solid tomato;
+    padding: 10px;
+  }
+  .user-welcome {
+    margin: 10px 0 0 10px;
+    span {
+      color: red;
+    }
+  }
+  .account-fields {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto 0 auto;
+    width: 95%;
+  }
+  .info-left,
+  .info-right {
+    width: 50%;
+  }
+}

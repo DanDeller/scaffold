@@ -26,7 +26,6 @@ app.use((req, res, next) => {
 // set index route
 app.get('/', (req, res) => {
   res.render(__dirname + '/public/src/views/index');
-  // res.sendFile(path.join(__dirname, '/public/src/templates/index'));
 });
 
 // Build endpoints from config object
@@ -34,9 +33,7 @@ config.endpoints.forEach((page) => {
   app.get(page.route, (req, res) => {
     const fullTemp = page.template,
           tempName = fullTemp.split('/')[4].split('.')[0];
-
     res.render(__dirname + '/public/src/views/' + tempName);
-    // res.sendFile(path.join(__dirname + page.template));
   });
 });
 
