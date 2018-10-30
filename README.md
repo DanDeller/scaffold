@@ -15,8 +15,8 @@ A quick dev environment built on node, using gulp.
 <h2>Usage:</h2>
 <ul>
   <li>Download or clone the repo</li>
-  <li>Install packages: yarn or npm install</li>
-  <li>Start: npm start</li>
+  <li>Install packages: `yarn` or `npm install`</li>
+  <li>Start: `npm start`</li>
   <li>Port: http://localhost:3000/</li>
 </ul>
 
