@@ -35,9 +35,11 @@
     "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "file-system": "^2.2.2",
     "fs": "0.0.1-security",
     "gulp-changed": "^3.2.0",
     "gulp-livereload": "^4.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "templatesjs": "^2.0.0"
   }
 }

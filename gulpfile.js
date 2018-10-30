@@ -48,7 +48,7 @@ const nodemonOptions = {
   env: {'NODE_ENV': 'development'},
   verbose: false,
   ignore: [],
-  watch: ['bin/*', 'routes/*', 'server.js']
+  watch: ['server.js']
 };
 
 gulp.task('start', () => {
@@ -63,7 +63,7 @@ gulp.task('image', () => {
   ])
   .pipe(image())
   .pipe(gulp.dest(filePath.img.dest))
-  .pipe(notify({message: 'Image task complete.'}))
+  .pipe(notify({message: 'Image task complete.'}));
 });
 
 gulp.task('less', () => {
