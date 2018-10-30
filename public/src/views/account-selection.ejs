@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Selection</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header id="header" class="block">
+      <% include ../partials/header %>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SEARCH AREA -->
+    <section id="search-info">
+      <% include ../partials/search %>
+    </section>
+    <!-- END SEARCH AREA -->
+
+    <!-- LOGIN -->
+    <section id="account-selection">
+      <div class="container flex-wrap">
+        <div class="account-sidebar">
+          <div class="sidebar-block">
+            <p class="sidebar-heading"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Settings</p>
+            <ul class="sidebar-list">
+              <li><a href="#">Personal Information</a></li>
+              <li><a href="#">Account Selection</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-block">
+            <p class="sidebar-heading"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Orders</p>
+            <ul class="sidebar-list">
+              <li><a href="#">Favorites</a></li>
+              <li><a href="#">Saved Orders</a></li>
+              <li><a href="#">Order History</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="all-info flex-wrap">
+          <p class="info-heading">Personal Information</p>
+          <p class="user-welcome">Welcome Back, <span class="user-name">John Doe</span>! Last logon: October 27, 2014 3:19:37 PM<br><br><em>*</em> denotes required fields</p>
+          <div class="account-fields">
+            <form method="" action="">
+              <div class="info-left">
+                <div class="field">
+                  <label for="account-password">Password:</label>
+                  <input id="account-password" type="text" name="account-password" value="">
+                </div>
+                <div class="field">
+                  <label for="account-first-name">First name:</label>
+                  <input id="account-first-name" type="text" name="first-name" value="">
+                </div>
+                <div class="field">
+                  <label for="street-address">Street Address<span>*</span>:</label>
+                  <input id="street-address" type="text" name="street-address" value="">
+                </div>
+                <div class="field">
+                  <label for="country-region">Country/region<span>*</span>:</label>
+                  <select id="country-region">
+                    <option>Select one</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="zip">Zip code/postal code<span>*</span>:</label>
+                  <input id="zip" type="text" name="zip" value="">
+                </div>
+                <div class="field">
+                  <label for="Email">Email<span>*</span>:</label>
+                  <input id="Email" type="text" name="Email" value="">
+                </div>
+                <div class="field">
+                  <label for="country-region">Preferred Language:</label>
+                  <select id="country-region">
+                    <option>Select one</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="info-right">
+                <div class="field">
+                  <label for="verify-password">Verify password:</label>
+                  <input id="verify-password" type="text" name="verify-password" value="">
+                </div>
+                <div class="field">
+                  <label for="account-last-name">Last name<span>*</span>:</label>
+                  <input id="account-last-name" type="text" name="account-last-name" value="">
+                </div>
+                <div class="field">
+                  <label for="city">City<span>*</span>:</label>
+                  <input id="city" type="text" name="city" value="">
+                </div>
+                <div class="field">
+                  <label for="state-province">State/province<span>*</span>:</label>
+                  <select id="state-province">
+                    <option>Select one</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="phone-number">Phone number:</label>
+                  <input id="phone-number" type="text" name="phone-number" value="">
+                </div>
+                <div class="field">
+                  <label for="phone-number">Preferred currency:</label>
+                  <select id="phone-number">
+                    <option>Select one</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <button href='#' class="button-main update-info" href="https://www.google.com">Update</button>
+        </div>
+      </div>
+    </section>
+    <!-- END LOGIN -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <% include ../partials/footer %>
+    </section>
+    <!-- END FOOTER -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../../assets/mainJS/main.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('.sidebar-block i').on('click', function() {
+        $(this).toggleClass('rotate');
+        $(this).parent().parent().find('.sidebar-list').toggleClass('hide-list');
+      });
+    });
+  </script>
+</body>
+</html>

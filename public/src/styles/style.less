@@ -478,6 +478,7 @@ ACCOUNT SELECTION
 
 .account-sidebar {
   background: #f2f2f2;
+  height: 300px;
   padding: 10px;
   width: 20%;
   .sidebar-block {
@@ -507,7 +508,7 @@ ACCOUNT SELECTION
       }
       li {
         border-bottom: 1px solid #ccc;
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 5px 10px 10px;
         &:last-of-type {
           border: none;
@@ -520,6 +521,11 @@ ACCOUNT SELECTION
 .all-info {
   border: 1px solid #ccc;
   width: 78%;
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   .info-heading {
     background: #f2f2f2;
     border-top: 2px solid tomato;
@@ -527,18 +533,36 @@ ACCOUNT SELECTION
   }
   .user-welcome {
     margin: 10px 0 0 10px;
-    span {
+    em {
       color: red;
     }
   }
   .account-fields {
-    display: flex;
-    justify-content: space-between;
     margin: 15px auto 0 auto;
-    width: 95%;
+    width: 97%;
   }
   .info-left,
   .info-right {
     width: 50%;
+    .field {
+      margin: 0 0 15px 0;
+      width: 90%;
+      span {
+        color: red;
+      }
+      label {
+        display: block;
+        margin: 0 0 5px 0;
+      }
+      input, select {
+        border: 1px solid #4c4c4c;
+        border-radius: 2px;
+        padding: 6px;
+        width: 100%;
+      }
+    }
+  }
+  .update-info {
+    margin: 0 0 10px 10px;
   }
 }

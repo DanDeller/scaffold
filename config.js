@@ -17,9 +17,14 @@ var config = {
       "template": "/public/src/templates/login.ejs"
     },
     {
-      "name": "account-select",
-      "route": "/account-select",
-      "template": "/public/src/templates/account-select.ejs"
+      "name": "personal-info",
+      "route": "/personal-info",
+      "template": "/public/src/templates/personal-info.ejs"
+    },
+    {
+      "name": "account-selection",
+      "route": "/account-selection",
+      "template": "/public/src/templates/account-selection.ejs"
     }
   ]
 };
