@@ -4,17 +4,22 @@ var config = {
     {
       "name": "test",
       "route": "/test",
-      "template": "/public/src/templates/test.html"
+      "template": "/public/src/templates/test.ejs"
     },
     {
       "name": "products",
       "route": "/products",
-      "template": "/public/src/templates/products.html"
+      "template": "/public/src/templates/products.ejs"
     },
     {
       "name": "login",
       "route": "/login",
-      "template": "/public/src/templates/login.html"
+      "template": "/public/src/templates/login.ejs"
+    },
+    {
+      "name": "account-select",
+      "route": "/account-select",
+      "template": "/public/src/templates/account-select.ejs"
     }
   ]
 };
