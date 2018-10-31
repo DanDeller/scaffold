@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header id="header" class="block">
+      <% include ../partials/header %>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SEARCH AREA -->
+    <section id="search-info">
+      <% include ../partials/search %>
+    </section>
+    <!-- END SEARCH AREA -->
+
+    <!-- LOGIN -->
+    <section id="product-single" class="main-wrap">
+      <div class="container flex-wrap flex-center">
+        <div class="product-left">
+          <img src="/assets/images/ph2.png">
+        </div>
+        <div class="product-right">
+          <h1 class="product-name">Product Name</h1>
+          <p class="product-sku">SKU: <span>FB041_4101</span></p>
+          <p class="product-price">$24.00</p>
+          <p class="product-blurb">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <ul class="product-highlights">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</li>
+          </ul>
+          <div class="product-controls">
+            <a class="button-secondary" href="#">Save to Favorites</a>
+            <a class="button-main" href="#">Add to Current Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END LOGIN -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <% include ../partials/footer %>
+    </section>
+    <!-- END FOOTER -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../../assets/mainJS/main.js"></script>
+</body>
+</html>

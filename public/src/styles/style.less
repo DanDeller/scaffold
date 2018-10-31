@@ -22,6 +22,7 @@ DEFAULT VARIABLES & LIGHT CSS RESET
 @textColor: #121212;
 
 @buttonMain: tomato;
+@buttonSecondary: #b3b3b3;
 
 * {
   box-sizing: border-box;
@@ -78,6 +79,10 @@ button {
   width: 100%;
 }
 
+.hide {
+  //display: none;
+}
+
 .container {
   margin: 0 auto;
   max-width: 71.25em;
@@ -100,12 +105,36 @@ button {
   }
 }
 
+.main-wrap {
+  margin: 20px 0;
+  .container {
+    justify-content: space-between;
+  }
+}
+
 .button-main {
   background: @buttonMain;
   border: none;
   color: #fff;
   cursor: pointer;
   padding: 10px 15px;
+}
+
+.button-secondary {
+  background: @buttonSecondary;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.sidebar-heading {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /********************************
@@ -211,7 +240,7 @@ HEADER
       text-align: center;
       width: 12.5em;
       li {
-        border-bottom: 0.0625em solid #ccc;
+        border-bottom: 0.0625em solid #4c4c4c;
         cursor: pointer;
         font-family: @heading;
         font-size: 1.875em;
@@ -253,12 +282,30 @@ SEARCH AREA
     justify-content: space-between;
     input[type=text] {
       padding: 5px 22px 5px 5px;
+      @media screen and (max-width: @phone) {
+        width: 88%;
+      }
+    }
+    p {
+      @media screen and (max-width: @phone) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    form {
+      position: relative;
+    }
+    .search {
+      @media screen and (max-width: @phone) {
+        margin: 15px auto 0 auto;
+        width: 280px;
+      }
     }
     .search-item {
       background: none;
       border: none;
       position: absolute;
-      right: 45px;
+      right: 35px;
       top: 1px;
     }
   }
@@ -336,7 +383,7 @@ HOME BLURB
 PRODUCTS
 ********************************/
 #products {
-  margin: 3.125em 0;
+  margin: 20px 0;
   width: 100%;
   #sidebar {
     width: 20%;
@@ -468,19 +515,19 @@ PRIVACY POLICY
 /********************************
 ACCOUNT SELECTION
 ********************************/
-#account-selection {
-  margin: 50px 0;
-  min-height: 200px;
-  .container {
-    justify-content: space-between;
-  }
-}
-
 .account-sidebar {
   background: #f2f2f2;
   height: 300px;
   padding: 10px;
   width: 20%;
+  @media screen and (max-width: @tablet) {
+    height: 315px;
+  }
+  @media screen and (max-width: @phone) {
+    height: 300px;
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
   .sidebar-block {
     border: 1px solid #ccc;
     margin: 0 0 15px 0;
@@ -517,36 +564,49 @@ ACCOUNT SELECTION
     }
   }
 }
-
 .all-info {
   border: 1px solid #ccc;
   width: 78%;
-  form {
+  @media screen and (max-width: @phone) {
+    width: 100%;
+  }
+  .pi-form {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media screen and (max-width: 575px) {
+      display: block;
+    }
+  }
+  .as-form {
+    input[type=text] {
+      margin: 15px 0;
+    }
+    input[type=submit] {
+      display: block;
+    }
   }
   .info-heading {
     background: #f2f2f2;
     border-top: 2px solid tomato;
     padding: 10px;
   }
-  .user-welcome {
-    margin: 10px 0 0 10px;
-    em {
-      color: red;
-    }
+  .user-welcome em {
+    color: red;
   }
   .account-fields {
     margin: 15px auto 0 auto;
-    width: 97%;
+    width: 100%;
   }
   .info-left,
   .info-right {
-    width: 50%;
+    width: 46%;
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
     .field {
       margin: 0 0 15px 0;
-      width: 90%;
+      width: 100%;
       span {
         color: red;
       }
@@ -562,7 +622,144 @@ ACCOUNT SELECTION
       }
     }
   }
-  .update-info {
-    margin: 0 0 10px 10px;
+  .as-wrap {
+    padding: 10px;
   }
 }
+
+/********************************
+FAVORITES
+********************************/
+#favorites,
+#account-selection {
+  .favorites-table {
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .tg th {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4px 5px;
+    background: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+  }
+  .tg th:first-of-type {
+    border-left: 1px solid #ccc;
+  }
+  .tg th:last-of-type {
+    border-right: 1px solid #ccc;
+  }
+  .tg td {
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    word-break: normal;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .tg td i {
+    cursor: pointer;
+  }
+  .tg .tg-yw4l {
+    vertical-align: top
+  }
+  .fav-lists {
+    font-size: 13px;
+    margin: 15px 0 0 0;
+    span {
+      font-weight: 600;
+    }
+  }
+  .prev-next-list {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      border: 1px solid #4c4c4c;
+      border-radius: 2px;
+      margin: 0 0px 0 5px;
+      padding: 10px;
+    }
+  }
+}
+
+/********************************
+PRODUCT-SINGLE
+********************************/
+#product-single {
+  .product-left {
+    padding: 0 20px 0 0;
+    width: 35%;
+    @media screen and (max-width: @phone) {
+      padding: 0;
+      width: 100%;
+    }
+    img {
+      margin: 0;
+      width: 100%;
+      @media screen and (max-width: @phone) {
+        display: block;
+        margin: 0 auto 25px auto;
+        width: 80%;
+      }
+    }
+  }
+  .product-right {
+    width: 65%;
+    @media screen and (max-width: @phone) {
+      width: 100%;
+    }
+    .product-name {
+      font-size: 22px;
+    }
+    .product-sku {
+      color: #767676;
+      font-size: 10px;
+      margin: 15px 0;
+    }
+    .product-price {
+      color: tomato;
+      font-size: 16px;
+    }
+    .product-blurb {
+      font-size: 12px;
+      line-height: 20px;
+      margin: 15px 0;
+    }
+    .product-highlights {
+      font-size: 12px;
+      list-style-type: disc;
+      margin: 0 0 0 15px;
+    }
+    .product-controls {
+      margin: 30px 0 0 0;
+      display: flex;
+      justify-content: flex-end;
+      a {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

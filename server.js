@@ -23,12 +23,10 @@ app.use((req, res, next) => {
   next();
 });
 
-// set index route
 app.get('/', (req, res) => {
   res.render(__dirname + '/public/src/views/index');
 });
 
-// Build endpoints from config object
 config.endpoints.forEach((page) => {
   app.get(page.route, (req, res) => {
     const fullTemp = page.template,
@@ -37,5 +35,4 @@ config.endpoints.forEach((page) => {
   });
 });
 
-// Listen for app to start
 app.listen(config.port, () => console.log('Running on port 3000 (http://localhost:3000).'));

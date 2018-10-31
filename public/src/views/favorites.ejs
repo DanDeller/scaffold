@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Account Selection</title>
+  <title>Favorites</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -20,8 +20,8 @@
     </section>
     <!-- END SEARCH AREA -->
 
-    <!-- ACCOUNT SELECTION -->
-    <section id="account-selection" class="main-wrap">
+    <!-- PERSONAL INFO -->
+    <section id="favorites" class="main-wrap">
       <div class="container flex-wrap">
         <aside class="account-sidebar">
           <div class="sidebar-block">
@@ -41,43 +41,62 @@
           </div>
         </aside>
         <div class="all-info">
-          <p class="info-heading">Account Selection</p>
+          <p class="info-heading">Favorites Lists</p>
           <div class="as-wrap">
-            <p>Search name or account number.</p>
-            <form class="as-form" action="" method="">
-              <input type="text" name="" value="">
-              <input class="button-main" type="submit" name="">
-            </form>
-            <div class="hide">
-              <table class="tg favorites-table">
-                <tr>
-                  <th></th>
-                  <th>Account Number</th>
-                  <th>Account Name</th>
-                  <th>City</th>
-                  <th>State</th>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name=""></td>
-                  <td>1234</td>
-                  <td>John D.</td>
-                  <td>Pittsburgh</td>
-                  <td>PA</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name=""></td>
-                  <td>5678</td>
-                  <td>John D.</td>
-                  <td>San Diego</td>
-                  <td>CA</td>
-                </tr>
-              </table>
+            <button class="button-main">Create List</button>
+            <table class="tg favorites-table">
+              <tr>
+                <th>Name</th>
+                <th>Items</th>
+                <th>Last Updated</th>
+                <th>Created By</th>
+                <th>Type</th>
+                <th>Actions</th>
+              </tr>
+              <tr>
+                <td>List1</td>
+                <td>2</td>
+                <td>November 17, 2014</td>
+                <td>John Doe</td>
+                <td>Shared</td>
+                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>List1</td>
+                <td>2</td>
+                <td>November 17, 2014</td>
+                <td>John Doe</td>
+                <td>Shared</td>
+                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>List1</td>
+                <td>2</td>
+                <td>November 17, 2014</td>
+                <td>John Doe</td>
+                <td>Shared</td>
+                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td>List1</td>
+                <td>2</td>
+                <td>November 17, 2014</td>
+                <td>John Doe</td>
+                <td>Shared</td>
+                <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+              </tr>
+            </table>
+            <p class="fav-lists">Lists 1 - 12 of <span>14</span></p>
+            <div class="prev-next-list">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- END ACCOUNT SELECTION -->
+    <!-- END PERSONAL INFO -->
 
     <!-- FOOTER -->
     <section id="footer">

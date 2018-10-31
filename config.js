@@ -2,9 +2,9 @@ var config = {
   port: 3000,
   endpoints: [
     {
-      "name": "test",
-      "route": "/test",
-      "template": "/public/src/templates/test.ejs"
+      "name": "favorites",
+      "route": "/favorites",
+      "template": "/public/src/templates/favorites.ejs"
     },
     {
       "name": "products",
@@ -25,6 +25,11 @@ var config = {
       "name": "account-selection",
       "route": "/account-selection",
       "template": "/public/src/templates/account-selection.ejs"
+    },
+    {
+      "name": "product-single",
+      "route": "/product-single",
+      "template": "/public/src/templates/product-single.ejs"
     }
   ]
 };
