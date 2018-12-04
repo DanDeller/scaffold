@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Current Order</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header id="header" class="block">
+      <% include ../partials/header %>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SEARCH AREA -->
+    <section id="search-info">
+      <% include ../partials/search %>
+    </section>
+    <!-- END SEARCH AREA -->
+
+    <!-- LOGIN -->
+    <section id="current-order" class="main-wrap">
+      <div class="container">
+        <a class="button-main continue-shopping" href="#">Continue Shopping</a>
+        <div class="current-order">
+          <h1 class="info-heading">Current Order</h1>
+          <div class="as-wrap">
+            <div class="table-format">
+              <table class="tg current-order-table">
+                <tr>
+                  <th>Product</th>
+                  <th>Availability</th>
+                  <th>QTY</th>
+                  <th>Each</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="current-product-name">Product name</p>
+                    <p class="current-sku">SKU: <span>FB041_410101</span></p>
+                    <p class="change-attributes"><a href="#">Change Attributes</a></p>
+                  </td>
+                  <td>In Stock</td>
+                  <td><input type="text" name="" value="1"></td>
+                  <td>$24.00</td>
+                  <td>$24.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="current-product-name">Product name</p>
+                    <p class="current-sku">SKU: <span>FB041_410101</span></p>
+                    <p class="change-attributes"><a href="#">Change Attributes</a></p>
+                  </td>
+                  <td>In Stock</td>
+                  <td><input type="text" name="" value="1"></td>
+                  <td>$24.00</td>
+                  <td>$24.00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="checkout-fav">
+              <a class="button-secondary" href="#">Add to Favorites</a>
+              <a class="button-main" href="#">Checkout</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <!-- END LOGIN -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <% include ../partials/footer %>
+    </section>
+    <!-- END FOOTER -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../../assets/mainJS/main.js"></script>
+</body>
+</html>

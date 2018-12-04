@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order History</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header id="header" class="block">
+      <% include ../partials/header %>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SEARCH AREA -->
+    <section id="search-info">
+      <% include ../partials/search %>
+    </section>
+    <!-- END SEARCH AREA -->
+
+    <!-- ORDER HISTORY -->
+    <section id="favorites-list" class="main-wrap">
+      <div class="container flex-wrap">
+        <!-- sidebar -->
+        <% include ../partials/main-sidebar %>
+        <!-- end sidebar -->
+        <div class="all-info">
+          <h1 class="info-heading">Order Tracking</h1>
+          <div class="as-wrap">
+            <div class="quick-details">
+              <form method="" action="">
+                <div class="form-fields">
+                  <div class="field">
+                    <label for="order-number">Order Number:</label>
+                    <input id="order-number" type="text" name="">
+                  </div>
+                  <div class="field">
+                    <label for="web-order-number">Web order Number:</label>
+                    <input id="web-order-number" type="text" name="">
+                  </div>
+                  <div class="field">
+                    <label for="purchase-order">Purchase Order:</label>
+                    <input id="purchase-order" type="text" name="">
+                  </div>
+                  <div class="field">
+                    <label for="date-range">Date Range:</label>
+                    <input id="date-range" type="text" name="">
+                  </div>
+                </div>
+                <div class="form-fields">
+                  <div class="field">
+                    <label for="order-type">Order Type:</label>
+                    <select id="order-type">
+                      <option>Select One</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="order-status">Status:</label>
+                    <select id="order-status">
+                      <option>Select One</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="order-to">To:</label>
+                    <input id="order-to" type="text" name="">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="shipping-info order-box">
+              <h3>Order History</h3>
+              <div class="order-box-body">
+                <div class="order-pager">
+                  <p class="fav-lists">Lists 1 - 2 of <span>14</span></p>
+                  <div class="prev-next-list">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <div class="table-format">
+                  <table class="tg order-history-table">
+                    <tr>
+                      <th>Order Number</th>
+                      <th>Company Name</th>
+                      <th>Purchase Order</th>
+                      <th>Order By</th>
+                      <th>Order Date</th>
+                      <th>Status</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>1234</td>
+                      <td>Company Name</td>
+                      <td>4321</td>
+                      <td>John D</td>
+                      <td>10/12/26</td>
+                      <td>Shipped</td>
+                      <td><a class="button-main" href="#">Re-Order</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ORDER HISTORY -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <% include ../partials/footer %>
+    </section>
+    <!-- END FOOTER -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../../assets/mainJS/main.js"></script>
+</body>
+</html>

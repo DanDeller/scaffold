@@ -23,25 +23,11 @@
     <!-- PERSONAL INFO -->
     <section id="personal-info" class="main-wrap">
       <div class="container flex-wrap">
-        <aside class="account-sidebar">
-          <div class="sidebar-block">
-            <p class="sidebar-heading"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Settings</p>
-            <ul class="sidebar-list">
-              <li><a href="#">Personal Information</a></li>
-              <li><a href="#">Account Selection</a></li>
-            </ul>
-          </div>
-          <div class="sidebar-block">
-            <p class="sidebar-heading"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Orders</p>
-            <ul class="sidebar-list">
-              <li><a href="#">Favorites</a></li>
-              <li><a href="#">Saved Orders</a></li>
-              <li><a href="#">Order History</a></li>
-            </ul>
-          </div>
-        </aside>
+        <!-- sidebar -->
+        <% include ../partials/main-sidebar %>
+        <!-- end sidebar -->
         <div class="all-info flex-wrap ">
-          <p class="info-heading">Personal Information</p>
+          <h1 class="info-heading">Personal Information</h1>
           <div class="as-wrap">
             <p class="user-welcome">Welcome Back, <span class="user-name">John Doe</span>! Last logon: October 27, 2014 3:19:37 PM<br><br><em>*</em> denotes required fields</p>
             <div class="account-fields">

@@ -6,4 +6,7 @@ $(function() {
   $('.close-nav').on('click', () => {
     $('.mobile-nav').removeClass('active-nav');
   });
+  $('test').on('click', () => {
+    $('.mobile-nav').removeClass('active-nav');
+  });
 });

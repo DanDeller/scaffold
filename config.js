@@ -7,6 +7,11 @@ var config = {
       "template": "/public/src/templates/favorites.ejs"
     },
     {
+      "name": "favorites-list",
+      "route": "/favorites-list",
+      "template": "/public/src/templates/favorites-list.ejs"
+    },
+    {
       "name": "products",
       "route": "/products",
       "template": "/public/src/templates/products.ejs"
@@ -30,6 +35,31 @@ var config = {
       "name": "product-single",
       "route": "/product-single",
       "template": "/public/src/templates/product-single.ejs"
+    },
+    {
+      "name": "current-order",
+      "route": "/current-order",
+      "template": "/public/src/templates/current-order.ejs"
+    },
+    {
+      "name": "account-summary",
+      "route": "/account-summary",
+      "template": "/public/src/templates/account-summary.ejs"
+    },
+    {
+      "name": "order-confirmation",
+      "route": "/order-confirmation",
+      "template": "/public/src/templates/order-confirmation.ejs"
+    },
+    {
+      "name": "order-details",
+      "route": "/order-details",
+      "template": "/public/src/templates/order-details.ejs"
+    },
+    {
+      "name": "order-history",
+      "route": "/order-history",
+      "template": "/public/src/templates/order-history.ejs"
     }
   ]
 };

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Favorites</title>
+  <title>Favorites Lists</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -21,42 +21,55 @@
     <!-- END SEARCH AREA -->
 
     <!-- PERSONAL INFO -->
-    <section id="favorites" class="main-wrap">
+    <section id="favorites-list" class="main-wrap">
       <div class="container flex-wrap">
         <!-- sidebar -->
         <% include ../partials/main-sidebar %>
         <!-- end sidebar -->
         <div class="all-info">
-          <h1 class="info-heading">Favorite List</h1>
+          <h1 class="info-heading">Favorites Lists</h1>
           <div class="as-wrap">
-            <p>Created By <span>John D</span></p>
-            <p>Last Updated November 24, 2018</p>
-            <p>Shared List</p>
-            <div class="edit-list">
-              <a class="button-main" href="#">Edit List</a>
-            </div>
+            <button class="button-main create-new-list">Create List</button>
             <div class="table-format">
-              <div class="filter flex-wrap">
-                <input type="text" name="" placeholder="Type a SKU">
-                <input type="text" name="" placeholder="Qty">
-                <a class="button-secondary" href="#">Add</a>
-                <a class="button-main" href="#">Add List To Current Order</a>
-              </div>
               <table class="tg favorites-table">
                 <tr>
-                  <th></th>
-                  <th>SKU</th>
                   <th>Name</th>
-                  <th>Quantity</th>
-                  <th>Manufacturer</th>
+                  <th>Items</th>
+                  <th>Last Updated</th>
+                  <th>Created By</th>
+                  <th>Type</th>
                   <th>Actions</th>
                 </tr>
                 <tr>
-                  <td><img src="/assets/images/ph2.png"></td>
-                  <td>FB041_410101</td>
-                  <td>T-Handle Bolt</td>
-                  <td><input type="text" name="" value="1"></td>
-                  <td>Black Key Fasteners</td>
+                  <td>List1</td>
+                  <td>2</td>
+                  <td>November 17, 2014</td>
+                  <td>John Doe</td>
+                  <td>Shared</td>
+                  <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>List1</td>
+                  <td>2</td>
+                  <td>November 17, 2014</td>
+                  <td>John Doe</td>
+                  <td>Shared</td>
+                  <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>List1</td>
+                  <td>2</td>
+                  <td>November 17, 2014</td>
+                  <td>John Doe</td>
+                  <td>Shared</td>
+                  <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>List1</td>
+                  <td>2</td>
+                  <td>November 17, 2014</td>
+                  <td>John Doe</td>
+                  <td>Shared</td>
                   <td><i class="fa fa-cogs" aria-hidden="true"></i></td>
                 </tr>
               </table>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Account Selection</title>
+  <title>My Account Summary</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -21,43 +21,35 @@
     <!-- END SEARCH AREA -->
 
     <!-- ACCOUNT SELECTION -->
-    <section id="account-selection" class="main-wrap">
+    <section id="account-summary" class="main-wrap">
       <div class="container flex-wrap">
         <!-- sidebar -->
         <% include ../partials/main-sidebar %>
         <!-- end sidebar -->
         <div class="all-info">
-          <h1 class="info-heading">Account Selection</h1>
-          <div class="as-wrap">
-            <p>Search name or account number.</p>
-            <form class="as-form" action="" method="">
-              <input type="text" name="" value="">
-              <input class="button-main" type="submit" name="">
-            </form>
-            <div class="table-format">
-              <table class="tg account-selection-table">
-                <tr>
-                  <th></th>
-                  <th>Account Number</th>
-                  <th>Account Name</th>
-                  <th>City</th>
-                  <th>State</th>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name=""></td>
-                  <td>1234</td>
-                  <td>John D.</td>
-                  <td>Pittsburgh</td>
-                  <td>PA</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name=""></td>
-                  <td>5678</td>
-                  <td>John D.</td>
-                  <td>San Diego</td>
-                  <td>CA</td>
-                </tr>
-              </table>
+          <h1 class="info-heading">My Account Summary</h1>
+          <div class="as-wrap personal-info">
+            <p>Welcome, <span>John Doe</span></p>
+            <p>This is your account summary. You can change your personal information and manage the options available for your account.</p>
+            <div class="inner">
+              <p>Personal Information:</p>
+              <div class="table-format account-summary-table">
+                <table class="tg">
+                  <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Email</th>
+                  </tr>
+                  <tr>
+                    <td>John D.</td>
+                    <td>5678</td>
+                    <td>San Diego</td>
+                    <td>...</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button-main" href="#">Edit</a>
             </div>
           </div>
         </div>

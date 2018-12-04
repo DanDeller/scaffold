@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Details</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header id="header" class="block">
+      <% include ../partials/header %>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SEARCH AREA -->
+    <section id="search-info">
+      <% include ../partials/search %>
+    </section>
+    <!-- END SEARCH AREA -->
+
+    <!-- ORDER DETAILS -->
+    <section id="order-details" class="main-wrap">
+      <div class="container flex-wrap">
+        <!-- sidebar -->
+        <% include ../partials/main-sidebar %>
+        <!-- end sidebar -->
+        <div class="all-info">
+          <h1 class="info-heading">Order Details</h1>
+          <div class="as-wrap">
+            <div class="quick-details">
+              <p>Order Number: <span>11001</span></p>
+              <p>Order Date: <span>November 5, 2014</span></p>
+            </div>
+            <div class="shipping-info order-box">
+              <h3>Shipping Information</h3>
+              <div class="order-box-body">
+                <div class="box-column">
+                  <p>Shipping Address: <span>John Doe</span></p>
+                  <ul>
+                    <li>John Doe</li>
+                    <li>820 Snow Ave</li>
+                    <li>Markham Ontario</li>
+                    <li>Canada H0H 0H0</li>
+                    <li>905-555-2000</li>
+                    <li>john@test.test</li>
+                  </ul>
+                  <p class="charge-type">Charge Type: <span>Charge by seller</span></p>
+                </div>
+                <div class="box-column">
+                  <p>Ship as Complete: <span>Yes</span></p>
+                  <p>Shipping Method: <span>Mail</span></p>
+                </div>
+                <div class="order-pager">
+                  <p class="fav-lists">Lists 1 - 2 of <span>14</span></p>
+                  <div class="prev-next-list">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <div class="table-format">
+                  <table class="tg order-details-table">
+                    <tr>
+                      <th>Product</th>
+                      <th>Requested Shipping Date</th>
+                      <th>Expedite</th>
+                      <th>Availability</th>
+                      <th>Qty</th>
+                      <th>Each</th>
+                      <th>Total</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="/assets/images/ph2.png">
+                        <div>
+                          <p>T-Handle Bolt</p>
+                          <ul>
+                            <li>SKU: FB041_410101</li>
+                            <li>Thread size : 1/4"-20</li>
+                            <li>Material : Stainless steel</li>
+                            <li>Length : 3 1/4"</li>
+                            <li>Finish : Unfinished</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td>No</td>
+                      <td>In stock</td>
+                      <td>1</td>
+                      <td>$24.00</td>
+                      <td>$24.00</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="/assets/images/ph2.png">
+                        <div>
+                          <p>T-Handle Bolt</p>
+                          <ul>
+                            <li>SKU: FB041_410101</li>
+                            <li>Thread size : 1/4"-20</li>
+                            <li>Material : Stainless steel</li>
+                            <li>Length : 3 1/4"</li>
+                            <li>Finish : Unfinished</li>
+                          </ul>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td>No</td>
+                      <td>In stock</td>
+                      <td>1</td>
+                      <td>$24.00</td>
+                      <td>$24.00</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="order-pager">
+                  <p class="fav-lists">Lists 1 - 2 of <span>14</span></p>
+                  <div class="prev-next-list">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <div class="total">
+                  <ul>
+                    <li><p>Order Subtotal:</p><p>$240.00</p></li>
+                    <li><p>Discount</p><p>($25.00)</p></li>
+                    <li><p>Tax:</p><p>$0.00</p></li>
+                    <li><p>Shipping:</p><p></p>$0.00</li>
+                    <li><p>Shipping Tax:</p><p></p>$0.00</li>
+                    <li><p>Order Total:</p><p></p>$240.00</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="shipping-info order-box">
+              <h3>Billing Information</h3>
+              <div class="order-box-body">
+                <div class="box-column">
+                  <p>Shipping Address: <span>John Doe</span></p>
+                  <ul>
+                    <li>John Doe</li>
+                    <li>820 Snow Ave</li>
+                    <li>Markham Ontario</li>
+                    <li>Canada H0H 0H0</li>
+                    <li>905-555-2000</li>
+                    <li>john@test.test</li>
+                  </ul>
+                </div>
+                <div class="box-column">
+                  <p>Ship as Complete: <span>Yes</span></p>
+                  <p>Shipping Method: <span>Mail</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="print-button print-details">
+              <a href="#" class="print-page button-main">Print</a>
+              <p>We recommend you print this page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ORDER DETAILS -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <% include ../partials/footer %>
+    </section>
+    <!-- END FOOTER -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../../assets/mainJS/main.js"></script>
+</body>
+</html>

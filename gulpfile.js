@@ -15,32 +15,32 @@ SCAFFOLD GULP FILE
     - './public/assets'
 =========================*/
 
-const sourcemaps  = require('gulp-sourcemaps'),
-      minifycss   = require('gulp-minify-css'),
-      nodemon     = require('gulp-nodemon'),
-      changed     = require('gulp-changed'),
-      concat      = require('gulp-concat'),
-      notify      = require('gulp-notify'),
-      watch       = require('gulp-watch'),
-      babel       = require('gulp-babel'),
-      image       = require('gulp-image');
-      gulp        = require('gulp'),
-      less        = require('gulp-less');
+const sourcemaps = require('gulp-sourcemaps'),
+      minifycss  = require('gulp-minify-css'),
+      nodemon    = require('gulp-nodemon'),
+      changed    = require('gulp-changed'),
+      concat     = require('gulp-concat'),
+      notify     = require('gulp-notify'),
+      watch      = require('gulp-watch'),
+      babel      = require('gulp-babel'),
+      image      = require('gulp-image');
+      gulp       = require('gulp'),
+      less       = require('gulp-less');
 
 const filePath = {
-      less: {
-        src: './public/src/styles/**/*.less',
-        dest: './public/assets/css'
-      },
-      js: {
-        src: './public/src/js/**/*.js',
-        dest: './public/assets/mainJS'
-      },
-      img: {
-        src: './public/src/images/*.+(jpg|jpeg|gif|png)',
-        dest: './public/assets/images'
-      }
-    };
+        less: {
+          src: './public/src/styles/**/*.less',
+          dest: './public/assets/css'
+        },
+        js: {
+          src: './public/src/js/**/*.js',
+          dest: './public/assets/mainJS'
+        },
+        img: {
+          src: './public/src/images/*.+(jpg|jpeg|gif|png)',
+          dest: './public/assets/images'
+        }
+      };
 
 const nodemonOptions = {
   script: 'server.js',

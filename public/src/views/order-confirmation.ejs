@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Confirmation</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div id="wrap">
+    <!-- HEADER -->
+    <header id="header">
+      <% include ../partials/header %>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SEARCH AREA -->
+    <section id="search-info">
+      <% include ../partials/search %>
+    </section>
+    <!-- END SEARCH AREA -->
+
+    <!-- ORDER CONFIRMATION -->
+    <section id="order-confirmation" class="main-wrap">
+      <div class="container flex-wrap flex-center">
+        <div class="order-header">
+          <ul>
+            <li>Thank you for your order!</li>
+            <li>You will receive a confirmation by e-mail to verify your order.</li>
+            <li>Order number:11010</li>
+            <li>Order date: November 11, 2014</li>
+          </ul>
+          <a href="#" class="button-main">Continue Shopping</a>
+        </div>
+        <div class="shipping-info order-box">
+          <h3>Shipping Information</h3>
+          <div class="order-box-body">
+            <div class="box-column">
+              <p>Shipping Address: <span>John Doe</span></p>
+              <ul>
+                <li>John Doe</li>
+                <li>820 Snow Ave</li>
+                <li>Markham Ontario</li>
+                <li>Canada H0H 0H0</li>
+                <li>905-555-2000</li>
+                <li>john@test.test</li>
+              </ul>
+            </div>
+            <div class="box-column">
+              <p>Ship as Complete: <span>Yes</span></p>
+              <p>Shipping Method: <span>Mail</span></p>
+            </div>
+            <div class="show-order-items">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <p>Show Order Items</p>
+            </div>
+            <div class="total">
+              <ul>
+                <li><p>Order Subtotal:</p><p>$240.00</p></li>
+                <li><p>Discount</p><p>($25.00)</p></li>
+                <li><p>Tax:</p><p>$0.00</p></li>
+                <li><p>Shipping:</p><p></p>$0.00</li>
+                <li><p>Shipping Tax:</p><p></p>$0.00</li>
+                <li><p>Order Total:</p><p></p>$240.00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="shipping-info order-box">
+          <h3>Billing Information</h3>
+          <div class="order-box-body">
+            <div class="box-column">
+              <p>Shipping Address: <span>John Doe</span></p>
+              <ul>
+                <li>John Doe</li>
+                <li>820 Snow Ave</li>
+                <li>Markham Ontario</li>
+                <li>Canada H0H 0H0</li>
+                <li>905-555-2000</li>
+                <li>john@test.test</li>
+              </ul>
+            </div>
+            <div class="box-column">
+              <p>Ship as Complete: <span>Yes</span></p>
+              <p>Shipping Method: <span>Mail</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="print-button">
+          <a href="#" class="print-page button-main">Print</a>
+          <p>We recommend you print this page</p>
+        </div>
+      </div>
+    </section>
+    <!-- END ORDER CONFIRMATION -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <% include ../partials/footer %>
+    </section>
+    <!-- END FOOTER -->
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../../assets/mainJS/main.js"></script>
+</body>
+</html>

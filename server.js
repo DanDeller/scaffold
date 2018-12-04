@@ -1,7 +1,7 @@
 /*=======================================================
 SCAFFOLD SERVER.JS (EXPRESSJS)
   - Index is the only hardcoded route.
-  - Set other routes in your config.js endpoints array.
+  - Set other routes in your config.js endpoints array and re run npm start.
 =======================================================*/
 
 const bodyParser = require('body-parser'),

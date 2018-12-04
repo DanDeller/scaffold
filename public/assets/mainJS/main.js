@@ -23,6 +23,9 @@ $(function () {
   $('.close-nav').on('click', function () {
     $('.mobile-nav').removeClass('active-nav');
   });
+  $('test').on('click', function () {
+    $('.mobile-nav').removeClass('active-nav');
+  });
 });
 "use strict";
 
