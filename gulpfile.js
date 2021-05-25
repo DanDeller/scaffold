@@ -91,11 +91,10 @@ gulp.task('js', () => {
   .pipe(notify({message: 'JS task complete.'}));
 });
 
-gulp.task('watch-parts', () => {
-  gulp.watch(filePath.js.src, ['js']);
-  gulp.watch(filePath.less.src, ['less']);
+gulp.task('watch', () => {
+  gulp.watch(filePath.js.src, gulp.series('js'));
+  gulp.watch(filePath.less.src, gulp.series('less'));
+  gulp.watch([filePaths.img.src], gulp.series('image'));
 });
 
-gulp.task('build', ['less', 'js']);
-gulp.task('watch', ['watch-parts']);
-gulp.task('default', ['watch', 'image']);
+gulp.task('default', gulp.series('watch'));
